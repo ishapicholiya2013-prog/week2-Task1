@@ -1,0 +1,94 @@
+:root {
+  --ink: #26392d;
+  --muted: #505e53;
+  --paper: #f8f7f0;
+  --green: #2e4938;
+  --line: #dcded2;
+}
+body {
+  background: var(--paper);
+  color: var(--ink);
+}
+header {
+  background: var(--paper);
+  border-top: 0;
+  border-bottom: 1px solid var(--line);
+}
+nav,
+main,
+.compact {
+  max-width: 1390px;
+  padding-inline: clamp(22px, 5vw, 78px);
+}
+.brand:before {
+  content: "✦";
+  margin-right: 10px;
+  color: var(--green);
+}
+h1,
+h2,
+.compact h1,
+.auth-layout h1,
+.auth-layout form h2 {
+  font-family: Georgia, serif;
+  font-weight: 500;
+  letter-spacing: -0.045em;
+}
+button,
+.button {
+  border-radius: 4px;
+}
+footer {
+  background: #26392d;
+}
+.directory-heading,
+.account-intro {
+  background: #26392d;
+  color: #f9f7ec;
+}
+.directory-heading .lead,
+.directory-heading .eyebrow,
+.account-intro p {
+  color: #e3ead9;
+}
+.account-symbol {
+  color: #e0ebbb;
+}
+.stat {
+  border-left-color: #2e4938;
+}
+.table-wrap th {
+  background: #e8ede1;
+}
+tbody tr:hover {
+  background: #f0f3eb;
+}
+td button.secondary,
+#toggle {
+  background: #e8ede1;
+  color: #2e4938;
+}
+.auth-layout,
+.auth-layout form.card {
+  border-color: var(--line);
+}
+.auth-layout .field input {
+  border-color: #aab5a7;
+}
+.table-wrap,
+.auth-layout,
+.secure .card,
+dialog {
+  box-shadow: 0 12px 36px #26392d18;
+}
+.notice {
+  color: #2e4938;
+}
+.notice.error {
+  color: #982c37;
+}
+:focus-visible,
+.table-wrap:focus-visible {
+  outline: 3px solid #53765e;
+  outline-offset: 4px;
+}

@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Tell us what you are working on" />
+    <title>Tell us what you are working on | Northstar Studio</title>
+    <link rel="stylesheet" href="styles.css?v=studio-v3" />
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="northstar.css?v=4" />
+  </head>
+  <body>
+    <header>
+      <nav aria-label="Main navigation">
+        <a class="brand" href="index.html">Northstar<span> Studio</span></a
+        ><button
+          class="menu secondary"
+          aria-expanded="false"
+          aria-controls="navigation"
+        >
+          Menu ☰
+        </button>
+        <div id="navigation" class="links">
+          <a href="index.html">Home</a><a href="about.html">About</a
+          ><a href="services.html">Services</a
+          ><a href="contact.html" aria-current="page">Contact</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <span class="eyebrow">Contact</span>
+      <h1>Let’s make the<br />next step clearer.</h1>
+      <div class="split">
+        <div>
+          <p class="lead">
+            Share a little about your idea, your audience and what you would
+            like to improve.
+          </p>
+          <h2>A useful first message includes</h2>
+          <p>
+            Your main goal, the kind of website or tool you need, and any timing
+            considerations.
+          </p>
+          <p class="muted">
+            This is a demonstration form. It validates your details locally and
+            does not send email or store messages.
+          </p>
+          <a
+            href="mailto:hello@northstar.example"
+            aria-label="Email Northstar demonstration address"
+            >✉ hello@northstar.example</a
+          >
+        </div>
+        <form class="card" id="contact-form">
+          <div class="field">
+            <label for="name">Your name</label
+            ><input
+              id="name"
+              name="name"
+              required
+              minlength="2"
+              maxlength="80"
+              autocomplete="name"
+            />
+          </div>
+          <div class="field">
+            <label for="email">Email address</label
+            ><input
+              id="email"
+              name="email"
+              type="email"
+              required
+              maxlength="254"
+              autocomplete="email"
+            />
+          </div>
+          <div class="field">
+            <label for="message">What would you like to build?</label
+            ><textarea
+              id="message"
+              name="message"
+              required
+              minlength="20"
+              maxlength="2000"
+            ></textarea
+            ><small>At least 20 characters.</small>
+          </div>
+          <button>Check message</button>
+          <p id="feedback" class="notice" role="status"></p>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <div>
+          <b>Northstar Studio</b><br /><small
+            >Thoughtful systems. Everyday clarity.</small
+          >
+        </div>
+        <div>
+          <a href="index.html">Home</a><a href="about.html">About</a
+          ><a href="services.html">Services</a><a href="contact.html">Contact</a
+          ><a
+            aria-label="Email the demonstration studio"
+            href="mailto:hello@northstar.example"
+            >✉ Email</a
+          >
+          <p>
+            <small
+              >Project by Isha · Internship Week 2 · Demonstration
+              project</small
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
